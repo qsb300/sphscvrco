@@ -1,0 +1,11 @@
+Package: sphscvrco
+Title: Spherical Second Virial Coefficient
+Version: 0.0.0.9000
+Authors@R: person("Sanbo", "Qin", email = "qsb300@gmail.com", role = c("aut", "cre"))
+Description: Calculate Second Virial Coefficient for Spherical Potential.
+Depends:
+    R (>= 3.1)
+License: MIT
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 5.0.1

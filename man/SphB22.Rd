@@ -4,22 +4,22 @@
 \alias{SphB22}
 \title{B22 for sphere with r depended potential, J Biol Phys 2015 41:85-97 eq.3.}
 \usage{
-SphB22(pot, eps, sig, rcut, beta, lower = 0, upper = Inf)
+SphB22(pot, beta, ..., lower = 0, upper = Inf)
 }
 \arguments{
 \item{pot}{potential}
-
-\item{eps}{epsilon}
-
-\item{sig}{sigma}
-
-\item{rcut}{cutoff}
 
 \item{beta}{kB/T}
 
 \item{lower}{lower limit for integration}
 
 \item{upper}{upper limit for integration}
+
+\item{eps}{epsilon}
+
+\item{sig}{sigma}
+
+\item{rcut}{cutoff}
 }
 \description{
 B22 for sphere with r depended potential, J Biol Phys 2015 41:85-97 eq.3.

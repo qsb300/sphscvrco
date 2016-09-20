@@ -27,15 +27,15 @@ if (length(args) >= 5) {
     cat("Modified upper:", upper, "\n")
 }
 
-HSB2 <- SphB22(HardSph, 1, sigma, radcut, beta, lower, upper)
+HSB2 <- SphB22(hardsphere, beta, 1, lower = lower, upper = upper)
 cat("HS B2:", HSB2, "\n")
 
-LJB2 <- SphB22(LJ, 1, sigma, radcut, beta, lower, upper)
+LJB2 <- SphB22(lj, beta, 1, sigma, lower = lower, upper = upper)
 cat("LJ B2:", LJB2, "T:", temp, "\n")
 
-LJcutB2 <- SphB22(LJCut, 1, sigma, radcut, beta, lower, upper)
+LJcutB2 <- SphB22(LJCut, beta, 1, sigma, radcut, lower = lower, upper = upper)
 cat("LJcut B2:", LJcutB2, "T:", temp, "Rc:", radcut, "\n")
 
-LJShfB2 <- SphB22(LJShf, 1, sigma, radcut, beta, lower, upper)
+LJShfB2 <- SphB22(LJShf, beta, 1, sigma, radcut, lower = lower, upper = upper)
 cat("LJShf B2:", LJShfB2, "T:", temp, "Rc:", radcut, "\n")
 

@@ -7,13 +7,7 @@
 u2pc(pot)
 }
 \arguments{
-\item{pot}{potential function in form pot(r, eps, sig, rcut, beta)}
-
-\item{eps}{epsilon}
-
-\item{sig}{sigma}
-
-\item{rcut}{cutoff}
+\item{pot}{potential function in form pot(r, ...)}
 
 \item{beta}{kB/T}
 }

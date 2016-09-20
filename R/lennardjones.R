@@ -17,28 +17,11 @@ lj <- function(r, eps, sig) {
 #' @param r distance from center
 #' @param eps epsilon, strength
 #' @param sig sigma, size of sphere
-#' @export
 ljforce <- function(r, eps, sig) {
     sr <- sig/r
     sr2 <- sr * sr
     sr6 <- sr2 * sr2 * sr2
     -48 * eps * sr6 * (sr6 - 0.5)/r
-}
-
-#' Wrapper of Potential Function for Lennard–Jones
-#'
-#' This is a wrapper over lj to called by SphB22
-#' @param r distance from center
-#' @param eps epsilon, strength
-#' @param sig sigma, size of sphere
-#' @param rcut cutoff, ignored
-#' @keywords Lennard-Jones lj
-#' @export
-#' @examples
-#' LJ(0.5, 1.0, 1.0, 2.5)
-#' LJ(1.5, 1.0, 1.0, 2.5)
-LJ <- function(r, eps, sig, rcut) {
-    lj(r, eps, sig)
 }
 
 #' Potential Function for Lennard–Jones with cutoff

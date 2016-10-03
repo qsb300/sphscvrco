@@ -7,25 +7,19 @@
 SphB22(pot, beta, ..., lower = 0, upper = Inf)
 }
 \arguments{
-\item{pot}{potential}
+\item{pot}{potential function in form of pot(r, ...)}
 
 \item{beta}{kB/T}
 
 \item{lower}{lower limit for integration}
 
 \item{upper}{upper limit for integration}
-
-\item{eps}{epsilon}
-
-\item{sig}{sigma}
-
-\item{rcut}{cutoff}
 }
 \description{
 B22 for sphere with r depended potential, J Biol Phys 2015 41:85-97 eq.3.
 }
 \examples{
-HSB2 <- SphB22(HardSph, 1, 1, Inf, 1, 0,  Inf)
+HSB2 <- SphB22(hardsphere, 1, 1, lower = 0, upper = Inf)
 cat('HS B2:', HSB2, '\\n')
 }
 

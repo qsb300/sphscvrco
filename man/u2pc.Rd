@@ -7,7 +7,7 @@
 u2pc(pot)
 }
 \arguments{
-\item{pot}{potential function in form pot(r, ...)}
+\item{pot}{potential function in form of pot(r, ...)}
 
 \item{beta}{kB/T}
 }
@@ -16,8 +16,8 @@ Convert u into Partition for Integration, (exp(-u)*b-1)*x^2, use closures
 following http://adv-r.had.co.nz/Functional-programming.html
 }
 \examples{
-partHS <- u2pc(HardSph)
-partHS(0.5, 1, 1, Inf, 1.0)
-partHS(1.5, 1, 1, Inf, 1.0)
+partHS <- u2pc(hardsphere)
+partHS(0.5, 1.0, 1)
+partHS(1.5, 1.0, 1)
 }
 
